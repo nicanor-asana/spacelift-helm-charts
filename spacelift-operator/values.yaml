@@ -46,7 +46,7 @@ controllerManager:
   podAnnotations: {}
   serviceAccount:
     create: true
-    name: spacelift-workerpool-controller
+    name: spacelift-operator-controller
     annotations: {}
     labels: {}
   nodeSelector: {}

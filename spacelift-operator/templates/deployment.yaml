@@ -106,7 +106,7 @@ spec:
         runAsNonRoot: true
         seccompProfile:
           type: RuntimeDefault
-      serviceAccountName: {{ include "spacelift-workerpool-controller.serviceAccountName" . }}
+      serviceAccountName: {{ include "chart.serviceAccountName" . }}
       terminationGracePeriodSeconds: 10
       {{- with .Values.controllerManager.topologySpreadConstraints }}
       topologySpreadConstraints:
