@@ -37,6 +37,6 @@ roleRef:
   name: '{{ include "spacelift-workerpool-controller.fullname" . }}-proxy-role'
 subjects:
 - kind: ServiceAccount
-  name: '{{ include "spacelift-workerpool-controller.fullname" . }}-controller-manager'
+  name: {{ include "spacelift-workerpool-controller.serviceAccountName" . }}
   namespace: '{{ .Release.Namespace }}'
 {{ end }}

@@ -54,6 +54,7 @@ controllerManager:
   annotations: {}
   podAnnotations: {}
   serviceAccount:
+    create: true
     annotations: {}
     labels: {}
   nodeSelector: {}
